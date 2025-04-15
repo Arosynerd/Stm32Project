@@ -82,36 +82,36 @@ void W25Q32_EraseSector(uint8_t block, uint8_t sector)
 }
 
 // 写入（页写）
-void W25Q32_PageWrite(uint8_t block, uint8_t sector, uint8_t page, uint8_t *data, uint16_t len)
+void W25Q32_PageWrite(uint8_t block, uint8_t sector, uint8_t page, uint8_t innerAddr, uint8_t *data, uint16_t len)
 {
-    // 首先等待状态不为忙
-    W25Q32_WaitNotBusy();
+  // 首先等待状态不为忙
+  W25Q32_WaitNotBusy();
 
-    // 开启写使能
-    W25Q32_WriteEnable();
+  // 开启写使能
+  W25Q32_WriteEnable();
 
-    // 计算要发送的地址（页首地址）
-    uint32_t addr = (block << 16) + (sector << 12) + (page << 8);
+  // 计算要发送的地址（页首地址）
+  uint32_t addr = (block << 16) + (sector << 12) + (page << 8) + innerAddr;
 
-    SPI1_CS_LOW();;
+  SPI1_CS_LOW();
 
-    // 发送指令
-    SPI_SwapByte(0x02);
+  // 发送指令
+  SPI_SwapByte(0x02);
 
-    // 发送24位地址
-    SPI_SwapByte(addr >> 16); // 第一个字节
-    SPI_SwapByte(addr >> 8);  // 第二个字节
-    SPI_SwapByte(addr >> 0);  // 第三个字节
+  // 发送24位地址
+  SPI_SwapByte(addr >> 16); // 第一个字节
+  SPI_SwapByte(addr >> 8);  // 第二个字节
+  SPI_SwapByte(addr >> 0);  // 第三个字节
 
-    //  依次发送数据
-    for (uint16_t i = 0; i < len; i++)
-    {
-        SPI_SwapByte(data[i]);
-    }
+  //  依次发送数据
+  for (uint16_t i = 0; i < len; i++)
+  {
+    SPI_SwapByte(data[i]);
+  }
 
-   SPI1_CS_HIGH();
+  SPI1_CS_HIGH();
 
-    W25Q32_WriteDisable();
+  W25Q32_WriteDisable();
 }
 
 // 读取

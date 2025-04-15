@@ -21,7 +21,7 @@ void W25Q32_WaitNotBusy(void);
 void W25Q32_EraseSector(uint8_t block, uint8_t sector);
 
 // 写入（页写）
-void W25Q32_PageWrite(uint8_t block, uint8_t sector, uint8_t page, uint8_t * data, uint16_t len);
+void W25Q32_PageWrite(uint8_t block, uint8_t sector, uint8_t page, uint8_t innerAddr, uint8_t *data, uint16_t len);
 
 // 读取
 void W25Q32_Read(uint8_t block, uint8_t sector, uint8_t page, uint8_t innerAddr, uint8_t * buffer, uint16_t len);

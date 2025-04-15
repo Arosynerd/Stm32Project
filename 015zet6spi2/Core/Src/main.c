@@ -90,17 +90,35 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   MX_SPI2_Init();
+  uint32_t woodfish_count = 1234;
+  uint8_t *woodfish_count_ptr = (uint8_t *)&woodfish_count;
   W25Q32_EraseSector(0,0);
-  W25Q32_PageWrite(0,0,0,"helloworld",10);
-  uint8_t buffer[10];
-  W25Q32_Read(0,0,0,0,buffer,10);
-  printf("%s\n",buffer);
+  W25Q32_PageWrite(0,0,0,0,woodfish_count_ptr,4);
+  uint8_t buffer[4];
+  W25Q32_Read(0,0,0,0,buffer,4);
+  uint32_t *buffer_ptr = NULL;
+  buffer_ptr = (uint32_t *)buffer; 
+  printf("%d\n",*buffer_ptr);
+
+  woodfish_count_ptr = (uint8_t *)"123";
+  W25Q32_PageWrite(0,0,0,8,woodfish_count_ptr,3);
+
+  uint8_t buffer1[11];
+  W25Q32_Read(0,0,0,0,buffer1,11);
+  for (int i = 0; i < 11; i++) {
+    printf("%c\n", buffer1[i]);
+  }
+  printf("\n");
   uint8_t mid;
   uint16_t did;
 
   readID(&mid, &did);
   printf("mid: %#x\n", mid);
   printf("did: %#x\n", did);
+
+  W25Q32_Read(0,0,0,0,buffer,4);
+  buffer_ptr = (uint32_t *)buffer; 
+  printf("%d\n",*buffer_ptr);
   /* USER CODE END 2 */
 
   /* Infinite loop */

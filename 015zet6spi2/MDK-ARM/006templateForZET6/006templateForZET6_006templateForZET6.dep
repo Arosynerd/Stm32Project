@@ -1,7 +1,7 @@
 Dependencies for Project '006templateForZET6', Target '006templateForZET6': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
 F (startup_stm32f103xe.s)(0x67F530A3)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_006templateForZET6-IC:\Users\17444\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\17444\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include--pd "__UVISION_VERSION SETA 538" --pd "_RTE_ SETA 1" --pd "STM32F10X_HD SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f103xe.lst --xref -o 006templateforzet6\startup_stm32f103xe.o --depend 006templateforzet6\startup_stm32f103xe.d)
-F (../Core/Src/main.c)(0x67FD1F1E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Hardware\inc-I.\RTE\_006templateForZET6-IC:\Users\17444\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\17444\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o 006templateforzet6\main.o --omf_browse 006templateforzet6\main.crf --depend 006templateforzet6\main.d)
+F (../Core/Src/main.c)(0x67FDC56C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Hardware\inc-I.\RTE\_006templateForZET6-IC:\Users\17444\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\17444\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o 006templateforzet6\main.o --omf_browse 006templateforzet6\main.crf --depend 006templateforzet6\main.d)
 I (../Core/Inc/main.h)(0x67F530A2)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x6725DEEB)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x67F530A2)
@@ -33,7 +33,7 @@ I (../Core/Inc/spi.h)(0x67F530A1)
 I (../Core/Inc/usart.h)(0x67DD68D0)
 I (D:\KeilSTM32\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (../Core/Inc/gpio.h)(0x67DD686B)
-I (..\Hardware\inc\w32qxx.h)(0x67FD1CFC)
+I (..\Hardware\inc\w32qxx.h)(0x67FDB732)
 F (../Core/Src/gpio.c)(0x67F530A0)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Hardware\inc-I.\RTE\_006templateForZET6-IC:\Users\17444\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\17444\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o 006templateforzet6\gpio.o --omf_browse 006templateforzet6\gpio.crf --depend 006templateforzet6\gpio.d)
 I (../Core/Inc/gpio.h)(0x67DD686B)
 I (../Core/Inc/main.h)(0x67F530A2)
@@ -557,8 +557,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x6725DEEB)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x6725DEEB)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x6725DEEB)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x6725DEEB)
-F (..\Hardware\src\w32qxx.c)(0x67FD1D50)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Hardware\inc-I.\RTE\_006templateForZET6-IC:\Users\17444\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\17444\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o 006templateforzet6\w32qxx.o --omf_browse 006templateforzet6\w32qxx.crf --depend 006templateforzet6\w32qxx.d)
-I (..\Hardware\inc\w32qxx.h)(0x67FD1CFC)
+F (..\Hardware\src\w32qxx.c)(0x67FDB700)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Hardware\inc-I.\RTE\_006templateForZET6-IC:\Users\17444\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\17444\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o 006templateforzet6\w32qxx.o --omf_browse 006templateforzet6\w32qxx.crf --depend 006templateforzet6\w32qxx.d)
+I (..\Hardware\inc\w32qxx.h)(0x67FDB732)
 I (../Core/Inc/spi.h)(0x67F530A1)
 I (../Core/Inc/main.h)(0x67F530A2)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x6725DEEB)

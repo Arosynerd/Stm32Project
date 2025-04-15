@@ -3,9 +3,9 @@
 <title>Static Call Graph - [006templateForZET6\006templateForZET6.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image 006templateForZET6\006templateForZET6.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Apr 14 22:43:47 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Apr 15 10:33:20 2025
 <BR><P>
-<H3>Maximum Stack Usage =        208 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        216 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 main &rArr; W25Q32_Read &rArr; W25Q32_WaitNotBusy &rArr; SPI_SwapByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 <P>
@@ -643,8 +643,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[79]"></a>W25Q32_PageWrite</STRONG> (Thumb, 114 bytes, Stack size 24 bytes, w32qxx.o(i.W25Q32_PageWrite))
-<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = W25Q32_PageWrite &rArr; W25Q32_WriteEnable &rArr; SPI_SwapByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
+<P><STRONG><a name="[79]"></a>W25Q32_PageWrite</STRONG> (Thumb, 122 bytes, Stack size 32 bytes, w32qxx.o(i.W25Q32_PageWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = W25Q32_PageWrite &rArr; W25Q32_WriteEnable &rArr; SPI_SwapByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W25Q32_WriteEnable
@@ -721,8 +721,8 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> printf5.o(i.__0printf$5)
 </UL>
-<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 102 bytes, Stack size 32 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = main &rArr; W25Q32_Read &rArr; W25Q32_WaitNotBusy &rArr; SPI_SwapByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
+<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 198 bytes, Stack size 40 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = main &rArr; W25Q32_Read &rArr; W25Q32_WaitNotBusy &rArr; SPI_SwapByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readID
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W25Q32_Read
