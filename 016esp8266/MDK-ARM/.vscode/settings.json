@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.cpp": "cpp",
+        "usart.h": "c",
+        "main.h": "c",
+        "esp8266.h": "c",
+        "stdint.h": "c",
+        "string": "c",
+        "string.h": "c"
+    }
+}
