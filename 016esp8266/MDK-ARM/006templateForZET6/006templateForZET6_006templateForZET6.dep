@@ -31,7 +31,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x6725DEEB)
 I (../Core/Inc/usart.h)(0x67FE7B3B)
 I (D:\KeilSTM32\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (../Core/Inc/gpio.h)(0x67DD686B)
-I (../Hardware/inc/esp8266.h)(0x67FF1286)
+I (../Hardware/inc/esp8266.h)(0x67FF2414)
 I (D:\KeilSTM32\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 F (../Core/Src/gpio.c)(0x67FF1286)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware/inc-I.\RTE\_006templateForZET6-IC:\Users\17444\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\17444\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o 006templateforzet6\gpio.o --omf_browse 006templateforzet6\gpio.crf --depend 006templateforzet6\gpio.d)
 I (../Core/Inc/gpio.h)(0x67DD686B)
@@ -484,8 +484,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x6725DEEB)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x6725DEEB)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x6725DEEB)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x6725DEEB)
-F (..\Hardware\src\esp8266.c)(0x67FF1BEC)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware/inc-I.\RTE\_006templateForZET6-IC:\Users\17444\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\17444\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o 006templateforzet6\esp8266.o --omf_browse 006templateforzet6\esp8266.crf --depend 006templateforzet6\esp8266.d)
-I (../Hardware/inc/esp8266.h)(0x67FF1286)
+F (..\Hardware\src\esp8266.c)(0x67FF241B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware/inc-I.\RTE\_006templateForZET6-IC:\Users\17444\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\17444\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o 006templateforzet6\esp8266.o --omf_browse 006templateforzet6\esp8266.crf --depend 006templateforzet6\esp8266.d)
+I (../Hardware/inc/esp8266.h)(0x67FF2414)
 I (D:\KeilSTM32\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
 I (../Core/Inc/usart.h)(0x67FE7B3B)
 I (../Core/Inc/main.h)(0x67FE7B3C)
