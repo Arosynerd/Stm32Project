@@ -33,7 +33,7 @@ void IRQ(void){
 
 ### 2.2调用HAL_UARTEx_ReceiveToIdle_IT,开启局部中断
 
-![](STM32 UART中断接收变长数据--笔记----为什么要反复调用HAL_UARTEx_ReceiveToIdle_IT(&huart1, rxBuffer, 20).assets/屏幕截图 2025-04-26 205628.png)
+![屏幕截图 2025-04-26 205628](README.assets/屏幕截图 2025-04-26 205628.png)
 
 就是开启了RX_NE和IDLE的局部中断
 
